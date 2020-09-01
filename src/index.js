@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const saludo = <h1>HOLO</h1>
+import CounterApp from './CounterApp'
+import './index.css';
+
 
 const divRoot =document.querySelector('#root');
 
-ReactDOM.render(saludo,divRoot);
+ReactDOM.render(<CounterApp value={0}></CounterApp>,divRoot);
